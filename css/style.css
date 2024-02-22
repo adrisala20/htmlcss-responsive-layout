@@ -87,7 +87,7 @@ button {
 .justify-center {
   justify-content: center;
 }
-.justify-content-space-between {
+.justify-space-between {
     justify-content: space-between;
 }
 .align-items-center {
@@ -133,7 +133,7 @@ button {
   }
   /**************text / border ******************** */
   .tex-center {
-    text-align: center;
+    text-align: -webkit-center;
   }
   .text-white {
     color: var(--color-section2-main);
@@ -189,8 +189,9 @@ header nav ul {
   /* ************ MAIN************* */
   /***************  info section   ********************/
 .card {
-  padding: 20px;
   margin-bottom: 20px;
+  text-align: -webkit-center;
+  padding: 20px;
 }
 .text-container,
 .img-container {
@@ -202,9 +203,7 @@ header nav ul {
 }
 #info img {
   display: block;
-  margin: 0 auto;
 }
-
 /* ************** Planning************* */
 .strategic img {
   width: 100%;
@@ -212,6 +211,8 @@ header nav ul {
 }
 .developement {
   margin-top: 40px;
+  text-align: -webkit-center;
+  padding: 20px;
 }
 .developement img{
   width: 100%;
@@ -230,11 +231,6 @@ header nav ul {
   color: var(--color-footer);
 }
 /************** testimonials *********** */
-.testimonial-container {
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-}
 .photo {
   width: 30%;
   aspect-ratio: 1 / 1;
@@ -273,7 +269,34 @@ header nav ul {
 #call-to-action button {
   padding: 15px 30px;
 }
+#call-to-action .container {
+  text-align: -webkit-center;
+  padding: 20px;
+}
+/*********** footer *********** */
+footer {
+  text-align: -webkit-center;
+  padding: 20px;
+}
 /*********** query ************/
+@media screen and (min-width:980px){
+  .container {
+    max-width: 992px;
+  }
+  #info .container {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  #info:first-child .card {
+    width: calc([100% / 3] * 2 - 20px);
+  }
+  .card {
+    width: calc(100% / 3 - 30px);
+    margin: 10px;
+  }
+}
+
 @media screen and (min-width:1200px) {
     header nav:hover ul {
         display: flex;
