@@ -45,8 +45,14 @@ body {
     padding: 30px;
   }
   /* ******** utility******* */
-.margin-x-auto {
-    margin: 0 auto;
+.m-20 {
+  margin: 20px;
+}
+.m-top3em {
+  margin-top: 3em;
+}
+.m-bottom {
+  margin-bottom: 3em;
 }
 .pointer {
     cursor: pointer;
@@ -63,6 +69,9 @@ button {
 }
 .padding20 {
   padding: 20px;
+}
+.p-top {
+  padding-top: 20px;
 }
 .p-bottom20 {
   padding-bottom: 20px;
@@ -237,7 +246,19 @@ header nav ul {
   color: var(--color-section2-main);
   padding: 10px 25px;
   letter-spacing: 8px;
-
+}
+/* *********** about us ********** */
+/* .right {
+  width: 50%;
+} */
+.right img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+.right button {
+  background-color: var(--color-button2);
+  color: var(--color-section2-main);
 }
 /*********** query ************/
 @media screen and (min-width:1200px) {
