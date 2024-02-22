@@ -61,15 +61,22 @@ button {
   font-size: 3em;
   padding: 20px 0;
 }
+.padding20 {
+  padding: 20px;
+}
 /*******+++* flex utility ****+++++++++*/
 .display-flex {
     display: flex;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-content-space-between {
     justify-content: space-between;
 }
 .align-items-center {
     align-items: center;
+    align-content: center;
 }
   /* ********** backgrounds *********** */
   .background-color-navbar {
@@ -114,6 +121,9 @@ button {
   }
   .text-blue {
     color: var(--color-navbar);
+  }
+  .text-oblique {
+    font-style: oblique;
   }
   .small-rounded {
     border-radius: 20px;
@@ -174,6 +184,26 @@ header nav ul {
 .strategic img {
   width: 100%;
   margin-bottom: 40px;
+}
+.developement {
+  margin-top: 40px;
+}
+.developement img{
+  width: 100%;
+}
+
+.btn-contrast {
+  display: flex;
+  width: 3em;
+  height: 3em;
+  font-size: 1.5em;
+  background-color: var(--color-button2);
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+.developement .fa-solid {
+  color: var(--color-footer);
 }
 /*********** query ************/
 @media screen and (min-width:1200px) {
