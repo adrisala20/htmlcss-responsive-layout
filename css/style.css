@@ -19,6 +19,7 @@ body {
     --color-button2: #9792E4;
     --color-footer: #333333;
     --color-section2-main: #FFFFFF;
+    --color-itsfree: #fdc15f;
   }
   .container {
     max-width: 576px;
@@ -127,6 +128,9 @@ button {
   .color-section2-main {
     color: var(--color-section2-main);
   }
+  .color-itsfree {
+    color: var(--color-itsfree);
+  }
   /**************text / border ******************** */
   .tex-center {
     text-align: center;
@@ -150,7 +154,6 @@ button {
     border-radius: 50%;
     overflow: hidden;
   }
-  
   /* ************header*********** */
 header {
   background-color: var(--color-navbar);
@@ -259,6 +262,10 @@ header nav ul {
 .right button {
   background-color: var(--color-button2);
   color: var(--color-section2-main);
+}
+/* ******* call to action ********** */
+#call-to-action button {
+  padding: 15px 30px;
 }
 /*********** query ************/
 @media screen and (min-width:1200px) {
