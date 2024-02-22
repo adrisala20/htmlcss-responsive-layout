@@ -67,6 +67,9 @@ button {
 .p-bottom20 {
   padding-bottom: 20px;
 }
+.p-bottom50 {
+  padding-bottom: 50px;
+}
 /*******+++* flex utility ****+++++++++*/
 .display-flex {
     display: flex;
@@ -209,6 +212,11 @@ header nav ul {
   color: var(--color-footer);
 }
 /************** testimonials *********** */
+.testimonial-container {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
 .photo {
   width: 30%;
   aspect-ratio: 1 / 1;
@@ -217,6 +225,19 @@ header nav ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* ************ features *********** */
+.text-big {
+  font-size: 2em;
+}
+.strong {
+  font-weight: bold;
+}
+#features button {
+  color: var(--color-section2-main);
+  padding: 10px 25px;
+  letter-spacing: 8px;
+
 }
 /*********** query ************/
 @media screen and (min-width:1200px) {
