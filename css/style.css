@@ -144,6 +144,12 @@ button {
   .text-oblique {
     font-style: oblique;
   }
+  .text-small {
+    font-weight: lighter;
+  }
+  .text-underline {
+    text-decoration: underline;
+  }
   .small-rounded {
     border-radius: 20px;
   }
