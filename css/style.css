@@ -295,6 +295,38 @@ footer {
     width: calc(100% / 3 - 30px);
     margin: 10px;
   }
+  #testimonials .container:not(.testimonial-container) {
+    text-align: -webkit-center;
+  }
+  .testimonial-container {
+    display: flex;
+    padding: 20px;
+  }
+  #features .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #features h2 {
+    width: 100%;
+  }
+  #features .container div{
+    width: calc(100% / 2 - 40px);
+  }
+  #about-us .container {
+    display: flex;
+  }
+  .left {
+    width: 60%;
+    padding: 20px;
+  }
+  .right {
+    width: 40%;
+    padding: 20px;
+  }
+  .right img {
+    height: 50%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width:1200px) {
